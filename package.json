@@ -1,0 +1,8 @@
+{
+  "name": "node-graphql-comparisons",
+  "version": "1.0.0",
+  "description": "Comparing node servers, graphql servers, ORM's, graphql schema generators, and graphql resolvers",
+  "main": "index.js",
+  "author": "Shawn Carnegie",
+  "license": "ISC"
+}
