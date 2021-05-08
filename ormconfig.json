@@ -1,0 +1,17 @@
+{
+  "name": "default",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "shawnc",
+  "password": "password",
+  "database": "node-graphql-comparisons",
+  "logging": true,
+  "entities": ["entrypoints/apollo-server-express--TypeGraphQL-typeORM/entities/*.*"],
+  "cli": {
+    "migrationsDir": "entrypoints/apollo-server-express--TypeGraphQL-typeORM/db/migrations"
+  },
+  "migrations": [
+    "entrypoints/apollo-server-express--TypeGraphQL-typeORM/db/migrations/*.ts"
+  ]
+}
