@@ -1,0 +1,11 @@
+overwrite: true
+schema: "http://localhost:4000/graphql"
+documents: null
+generates:
+  entrypoints/apollo-server-express-Graphql-js-Objection-GraphQL-code-generator/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+  entrypoints/apollo-server-express-Graphql-js-Objection-GraphQL-code-generator/generated/graphql.schema.json:
+    plugins:
+      - "introspection"
