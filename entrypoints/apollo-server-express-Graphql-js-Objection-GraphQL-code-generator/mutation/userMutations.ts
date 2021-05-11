@@ -1,5 +1,5 @@
 import { GraphQLNonNull, GraphQLString } from "graphql";
-import * as bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs';
 
 import User from '../models/User';
 import userGraphqlType from '../schema/user';

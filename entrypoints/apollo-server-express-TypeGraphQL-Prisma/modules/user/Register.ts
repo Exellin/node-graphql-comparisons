@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import { Resolver, Query, Mutation, Arg } from "type-graphql";
-import * as bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs';
 import User from "../../models/User";
 
 const prisma = new PrismaClient();
