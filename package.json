@@ -6,10 +6,13 @@
   "author": "Shawn Carnegie",
   "license": "MIT",
   "dependencies": {
+    "@nestjs/graphql": "^7.10.6",
+    "@nestjs/platform-express": "^7.6.15",
     "@prisma/client": "^2.22.1",
     "apollo-server-express": "^2.24.0",
     "bcryptjs": "^2.4.3",
     "graphql": "^15.5.0",
+    "graphql-tools": "^4.0.8",
     "knex": "^0.21.19",
     "objection": "^2.2.15",
     "pg": "^8.6.0",

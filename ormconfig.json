@@ -7,7 +7,7 @@
   "password": "password",
   "database": "node-graphql-comparisons",
   "logging": true,
-  "entities": ["entrypoints/apollo-server-express--TypeGraphQL-typeORM/entities/*.*"],
+  "entities": ["entrypoints/**/entities/*.*"],
   "cli": {
     "migrationsDir": "entrypoints/apollo-server-express--TypeGraphQL-typeORM/db/migrations"
   },
