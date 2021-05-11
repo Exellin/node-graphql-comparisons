@@ -7,6 +7,6 @@ reference:
 - ORM: Prisma
 - Schema / Resolver creation: TypeGraphQL
 
-- start the server with `nodemon entrypoints/apollo-server-express-TypeGraphQL-Prisma/index.ts`
+- start the server with `npx ts-node-dev --respawn entrypoints/apollo-server-express-TypeGraphQL-Prisma/index.ts`
 
 I wasn't able to figure out how to add the name field to the user class without it being added to the database
