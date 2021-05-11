@@ -13,6 +13,7 @@
     "knex": "^0.21.19",
     "objection": "^2.2.15",
     "pg": "^8.6.0",
+    "postgraphile": "^4.11.0",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1",
     "typeorm": "^0.2.32"
