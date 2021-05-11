@@ -5,7 +5,15 @@
   "main": "index.js",
   "author": "Shawn Carnegie",
   "license": "MIT",
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "entrypoints/apollo-server-express-Graphql-js-mikro-orm/mikro-orm.config.ts"
+    ]
+  },
   "dependencies": {
+    "@mikro-orm/core": "^4.5.4",
+    "@mikro-orm/postgresql": "^4.5.4",
     "@prisma/client": "^2.22.1",
     "apollo-server-express": "^2.24.0",
     "bcryptjs": "^2.4.3",
@@ -22,6 +30,7 @@
     "@graphql-codegen/introspection": "^1.18.2",
     "@graphql-codegen/typescript": "^1.22.0",
     "@graphql-codegen/typescript-resolvers": "^1.19.1",
+    "@mikro-orm/cli": "^4.5.4",
     "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.11",
     "@types/graphql": "^14.5.0",

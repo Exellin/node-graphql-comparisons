@@ -1,0 +1,23 @@
+import { ApolloServer } from 'apollo-server-express';
+import Express from "express";
+import { GraphQLSchema } from "graphql";
+
+import query from './query';
+import mutation from './mutation';
+
+const main = async () => {
+  const schema: GraphQLSchema = new GraphQLSchema({
+    query,
+    mutation
+  });
+
+  const apolloServer = new ApolloServer({ schema })
+
+  const app = Express();
+
+  apolloServer.applyMiddleware({app});
+
+  app.listen(4000, () => console.log('server started on http://localhost:4000/graphql'));
+}
+
+main();
