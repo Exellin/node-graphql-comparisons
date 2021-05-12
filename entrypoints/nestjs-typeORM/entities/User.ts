@@ -6,23 +6,23 @@ import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
 export class User extends BaseEntity {
   @Field(() => ID)
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @Field()
   @Column()
-  firstName: string;
+  firstName?: string;
 
   @Field()
   @Column()
-  lastName: string;
+  lastName?: string;
 
   @Field()
   @Column()
-  email: string;
+  email!: string;
 
   @Field()
-  name: string;
+  name!: string;
 
   @Column()
-  password: string;
+  password!: string;
 }

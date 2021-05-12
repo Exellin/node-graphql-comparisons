@@ -6,21 +6,21 @@ class User extends Model {
   static tableName = 'user';
 
   @Field(() => ID)
-  id: number;
+  id!: number;
 
   @Field()
-  firstName: string;
+  firstName?: string;
 
   @Field()
-  lastName: string;
+  lastName?: string;
 
   @Field()
-  email: string;
+  email!: string;
 
   @Field()
-  name: string;
+  name!: string;
 
-  password: string;
+  password!: string;
 }
 
 export default User;

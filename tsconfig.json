@@ -10,6 +10,7 @@
     "composite": false,
     "removeComments": true,
     "noImplicitAny": true,
+    "strict": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,

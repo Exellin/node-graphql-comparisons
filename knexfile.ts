@@ -16,6 +16,7 @@ export default {
       tableName: 'knex_migrations',
       directory: 'entrypoints/apollo-server-express-TypeGraphQL-Objection/db/migrations'
     },
+    // debug: true
     ...knexSnakeCaseMappers
   }
 };

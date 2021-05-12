@@ -6,7 +6,7 @@ interface User extends Omit<graphqlUserType, 'name'> {}
 
 class User extends Model {
   static tableName = 'user';
-  password: string
+  password!: string
 
   name(): string {
     return `${this.firstName} ${this.lastName}`
