@@ -1,4 +1,6 @@
-reference: https://docs.planetscale.com/tutorial/connect-nodejs-app
+reference:
+ - https://docs.planetscale.com/tutorial/connect-nodejs-app
+ - https://cloud.google.com/run/docs/quickstarts/build-and-deploy/nodejs
 
 - node server: fastify
 - graphql server: mercurius
@@ -40,4 +42,4 @@ PLANETSCALE_SERVICE_TOKEN
 Set up docker with:
  - `docker build .`
  - Find build ID with `docker image ls`
- - `docker run -p --env-file .env 4000:4000 ID`
+ - `docker run -p 4000:4000 --env-file .env ID`

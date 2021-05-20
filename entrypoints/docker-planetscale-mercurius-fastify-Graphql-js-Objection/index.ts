@@ -21,7 +21,8 @@ const main = async () => {
     graphiql: 'playground'
   })
 
-  app.listen(4000, '0.0.0.0', () => console.log('server started on http://localhost:4000/playground'));
+  const port = process.env.PORT || 4000;
+  app.listen(port, '0.0.0.0', () => console.log(`server started on http://localhost:${port}/playground`));
 }
 
 main();
