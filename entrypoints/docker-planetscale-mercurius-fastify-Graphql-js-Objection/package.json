@@ -1,0 +1,51 @@
+{
+  "name": "node-graphql-comparisons",
+  "version": "1.0.0",
+  "description": "Comparing node servers, graphql servers, ORM's, graphql schema generators, and graphql resolvers",
+  "main": "index.js",
+  "author": "Shawn Carnegie",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/graphql": "^7.10.6",
+    "@nestjs/platform-express": "^7.6.15",
+    "@prisma/client": "^2.22.1",
+    "apollo-server-express": "^2.24.0",
+    "apollo-server-micro": "^2.24.0",
+    "bcryptjs": "^2.4.3",
+    "fastify": "^3.15.1",
+    "graphql": "^15.5.0",
+    "graphql-tools": "^4.0.8",
+    "knex": "^0.21.19",
+    "mercurius": "^7.6.1",
+    "mysql": "^2.18.1",
+    "next": "^10.2.0",
+    "objection": "^2.2.15",
+    "pg": "^8.6.0",
+    "postgraphile": "^4.11.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.32"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.21.4",
+    "@graphql-codegen/introspection": "^1.18.2",
+    "@graphql-codegen/typescript": "^1.22.0",
+    "@graphql-codegen/typescript-resolvers": "^1.19.1",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.11",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^15.0.2",
+    "@types/react": "^17.0.5",
+    "prisma": "^2.22.1",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+    "generate-schema": "graphql-codegen --config codegen.yml",
+    "start": "NODE_PATH=entrypoints/docker-planetscale-mercurius-fastify-Graphql-js-Objection/build node build/index.js",
+    "build": "tsc -p .",
+    "dev": "ts-node index.ts"
+  }
+}

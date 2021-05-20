@@ -1,2 +1,5 @@
 node_modules
 .next
+dist
+entrypoints/docker-planetscale-mercurius-fastify-Graphql-js-Objection/package-lock.json
+.env
